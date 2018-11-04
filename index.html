@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>RPS GAME</title>
+	<link rel="stylesheet" type="text/css" href="./assets/style.css">
+	<link rel="stylesheet" type="text/css" href="./assets/reset.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no"/>
+</head>
+<body>
+
+	<div class="wrapper">
+	 <img id="rpsPic" src="image/rps.jpg">
+	 <div class="greeting">
+	 	<form id="name-form">
+	 		<input type="text" id="name-input" placeholder="name">
+	 		<input id="addName" type="submit" value="Start">
+	 	</form>
+	 </div>
+
+	 <div class="holder-box">
+	 	<div class="box player1">
+	 		<div class="waiting">
+	 			<h1>waiting for player 1</h1>
+	 			<i class="fa fa-spinner fa spin fa-one-large fa-fw"></i>
+	 		</div>
+	 		<div class="score score1"></div>
+	 		<div class="choices1"></div>
+	 	</div>
+
+	 	<div class="results"></div>
+	 	<div class="box player2">
+	 		<h1>waiting for player2</h1>
+	 		<i class="fa fa-spinner fa-pin fa-one-large fa-fw"></i>
+	 	</div>
+	 	<div class="score score2"></div>
+	 	<div class="choices2"></div>
+	 </div>
+	</div>
+
+	<div class="holder-messages">
+		<div id="message"></div>
+		<form id="message-form">
+			<input type="text" id="message-input" placeholder="Message">
+			<input id="addMessage" type="submit" value="send" style="background-color: transparent;">
+		</form>
+	</div>
+  </div>
+ 
+<script src="app.js"></script>
+</body>
+</html>
